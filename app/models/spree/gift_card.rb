@@ -16,7 +16,7 @@ module Spree
     validates :name,               presence: true
     validates :original_value,     presence: true
 
-    #before_validation :generate_code, on: :create
+    before_validation :generate_code, on: :create
     before_validation :set_calculator, on: :create
     before_validation :set_values, on: :create
 

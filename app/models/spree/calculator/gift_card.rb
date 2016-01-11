@@ -14,6 +14,5 @@ module Spree
         [(order.item_total + order.ship_total + order.additional_tax_total + credits), gift_card.current_value].min * -1
       end
 
-    end
   end
 end
